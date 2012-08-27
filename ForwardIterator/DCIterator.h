@@ -1,10 +1,11 @@
 //
-//  main.m
+//  DCIterator.h
 //  ForwardIterator
 //
 //  Created by Dalmo Cirne on 8/27/12.
 //  Copyright (c) 2012 Dalmo Cirne. All rights reserved.
 //
+
 /*
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -21,14 +22,21 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "DCSampleCode.h"
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        DCSampleCode *sampleCode = [[DCSampleCode alloc] init];
-        [sampleCode traverseTimeStructure];
-    }
-    
-    return 0;
-}
+@protocol DCIteratorDelegate;
 
+@interface DCIterator : NSObject
+
+@property (nonatomic, weak) id<DCIteratorDelegate> delegate;
+
+- (id)initWithDelegate:(id<DCIteratorDelegate>)delegate;
+- (BOOL)hasNext;
+- (void *)next;
+
+@end
+
+@protocol DCIteratorDelegate <NSObject>
+- (long)numberOfItems;
+- (void *)items;
+- (size_t)sizeOfItem;
+@end

@@ -10,6 +10,8 @@
 		C92DC19C15EC02BB004B9652 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92DC19B15EC02BB004B9652 /* Foundation.framework */; };
 		C92DC19F15EC02BB004B9652 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C92DC19E15EC02BB004B9652 /* main.m */; };
 		C92DC1A315EC02BB004B9652 /* ForwardIterator.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C92DC1A215EC02BB004B9652 /* ForwardIterator.1 */; };
+		C92DC1AB15EC0328004B9652 /* DCIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = C92DC1AA15EC0328004B9652 /* DCIterator.m */; };
+		C92DC1AE15EC0455004B9652 /* DCSampleCode.m in Sources */ = {isa = PBXBuildFile; fileRef = C92DC1AD15EC0455004B9652 /* DCSampleCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		C92DC19E15EC02BB004B9652 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C92DC1A115EC02BB004B9652 /* ForwardIterator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ForwardIterator-Prefix.pch"; sourceTree = "<group>"; };
 		C92DC1A215EC02BB004B9652 /* ForwardIterator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ForwardIterator.1; sourceTree = "<group>"; };
+		C92DC1A915EC0328004B9652 /* DCIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCIterator.h; sourceTree = "<group>"; };
+		C92DC1AA15EC0328004B9652 /* DCIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCIterator.m; sourceTree = "<group>"; };
+		C92DC1AC15EC0455004B9652 /* DCSampleCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCSampleCode.h; sourceTree = "<group>"; };
+		C92DC1AD15EC0455004B9652 /* DCSampleCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSampleCode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +79,13 @@
 		C92DC19D15EC02BB004B9652 /* ForwardIterator */ = {
 			isa = PBXGroup;
 			children = (
+				C92DC1A015EC02BB004B9652 /* Supporting Files */,
 				C92DC19E15EC02BB004B9652 /* main.m */,
 				C92DC1A215EC02BB004B9652 /* ForwardIterator.1 */,
-				C92DC1A015EC02BB004B9652 /* Supporting Files */,
+				C92DC1A915EC0328004B9652 /* DCIterator.h */,
+				C92DC1AA15EC0328004B9652 /* DCIterator.m */,
+				C92DC1AC15EC0455004B9652 /* DCSampleCode.h */,
+				C92DC1AD15EC0455004B9652 /* DCSampleCode.m */,
 			);
 			path = ForwardIterator;
 			sourceTree = "<group>";
@@ -140,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C92DC19F15EC02BB004B9652 /* main.m in Sources */,
+				C92DC1AB15EC0328004B9652 /* DCIterator.m in Sources */,
+				C92DC1AE15EC0455004B9652 /* DCSampleCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

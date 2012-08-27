@@ -1,5 +1,5 @@
 //
-//  main.m
+//  DCSampleCode.h
 //  ForwardIterator
 //
 //  Created by Dalmo Cirne on 8/27/12.
@@ -21,14 +21,9 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "DCSampleCode.h"
 
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        DCSampleCode *sampleCode = [[DCSampleCode alloc] init];
-        [sampleCode traverseTimeStructure];
-    }
-    
-    return 0;
-}
+@interface DCSampleCode : NSObject
 
+- (void)traverseTimeStructure;
+
+@end
